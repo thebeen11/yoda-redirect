@@ -7,6 +7,7 @@
     <script>
       const currentURL = window.location.href;
       window.opener.postMessage(currentURL, "http://localhost:3000");
+      window.opener.postMessage(currentURL, "https://datahub.test.briix.tech");
 
       setTimeout(window.close(), 1000)
     </script>
