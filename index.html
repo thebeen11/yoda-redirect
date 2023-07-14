@@ -8,11 +8,7 @@
       const currentURL = window.location.href;
       window.opener.postMessage(currentURL, "http://localhost:3000");
 
-      window.addEventListener('message', (event) => {
-        if (event.origin === 'http://localhost:3000') {
-            window.close()
-        }
-      });
+      setTimeout(window.close(), 1000)
     </script>
   </head>
   <body></body>
